@@ -6,3 +6,11 @@
 # Абракадабра
 # Вывод
 # а-5 б-2 д-1 к-1 р-2
+d = {}
+s = input()
+s = s.lower()
+for i in range(len(s)):
+    d[s[i]] = s.count(s[i])
+m = sorted(d.keys())
+for i in range(len(m)):
+    print(m[i], "-", d[m[i]], sep='', end=' ')
